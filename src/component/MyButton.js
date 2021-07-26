@@ -15,7 +15,6 @@ export default class MyButton extends Component {
 MyButton.PropTypes = {
     text: PropTypes.string.isRequired,
     bgColor: PropTypes.string,
-    textColor: PropTypes.string
 
 };
 const styles = StyleSheet.create({

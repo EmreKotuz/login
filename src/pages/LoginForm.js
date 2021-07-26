@@ -8,9 +8,9 @@ export default class LoginForm extends Component {
     render() {
         return (
             <View>
-                <Input autoCapitalize="none" placeholder="username" returnKeyType={"next"}
+                <Input autoCapitalize="none" placeholder="Kullanıcı Adın" returnKeyType={"next"}
                     onSubmitEditing={() => this.passwordInput.focus()} />
-                <Input secureTextEntry={true} placeholder="Password" eturnKeyType={"go"} inputRef={input => this.passwordInput = input} />
+                <Input secureTextEntry={true} placeholder="Şifren" eturnKeyType={"go"} inputRef={input => this.passwordInput = input} />
                 <MyButton bgColor={"#1ABC9C"} textColor={"white"} text={"Giriş Yap"} />
             </View>
         );

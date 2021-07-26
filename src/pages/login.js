@@ -12,7 +12,6 @@ export default class Login extends Component {
 					<Text style={styles.logoDescription}>Kotuz Ltd.</Text>
 				</View>
 				<KeyboardAvoidingView behavior={"position"}>
-
 					<ScrollView>
 						<View style={styles.loginArea}>
 							<Text style={styles.loginAreaTitle}>Küçük bir başlangıç</Text>
@@ -23,13 +22,14 @@ export default class Login extends Component {
 						</View>
 					</ScrollView>
 					<View style={styles.signUpArea}>
-						<Text style={{ color: "black", textAlign: "center" }}>Hesabınız yok mu?</Text>
+						<Text style={{ color: "black", textAlign: "center", textAlign: "center" }}>Hesabınız yok mu?  </Text>
 						<TouchableOpacity>
-							<Text style={{ color: "#1ABC9C", textAlign: "center" }}>Kayıt Ol</Text>
+							<Text style={{ color: "#2980B9", textAlign: "center", textAlign: "center", fontWeight: "bold" }}> Kayıt Ol</Text>
 						</TouchableOpacity>
 					</View>
 				</KeyboardAvoidingView>
 			</View>
+
 		);
 	}
 }
@@ -46,7 +46,13 @@ const styles = StyleSheet.create({
 		left: 0,
 		height: 250,
 		width: '100%',
-		backgroundColor: '#1ABC9C'
+		backgroundColor: '#34495E'
+	},
+	altTaraf: {
+		backgroundColor: "red",
+		width: "auto",
+		height: 100,
+		alignItems: "flex-end",
 	},
 	logo: {
 		width: 110,
@@ -88,7 +94,7 @@ const styles = StyleSheet.create({
 	},
 	signUpArea: {
 		alignItems: "center",
-		//flexflexdirection: “row”,
-
+		marginLeft: "25%",
+		flexDirection: 'row',
 	}
 });
